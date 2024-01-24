@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.ant-layout{
+  /* background-color: #f2edf3!important; */
+  /* background-color: #ECF3F9!important; */
+  /* background-color: #F1F9EC!important; */
+  background-color: #ECF3F9 !important;
+}
+.ant-menu-dark {
+  background-color: #03a9f4 !important;
+}
+
+.header  {
+  background-color: #03a9f4 !important;
+}
+
+.main {
+  padding: 24;
+  min-height: 50vh;
+  background-color: #F8F8FF;
+  border: '1px solid black';
+}
+
+.loginmain{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #69e0ce;
+
+}
+
+.pagetitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginmain-form{
+  height: 550px;
+  width: 500px;
+  color: white;
+  display: flex;
+  background-color: #34d1bb;
+  justify-content: center;
+  align-items: center;
+}
+.ant-form-item-explain-error{
+  color: red !important;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  width: 400px;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+input[type="number"] {
+  width: 400px;
+  padding: 12px 20px;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+}
+input[type="search"] {
+  width: 400px !important;
+  padding: 12px 20px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+}
+
+.add-user-main {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-User-form {
+  margin-top: 3rem;
+  height: 450px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcff;
+}
+
+
+/* navebar */
+
+.navbar {
+  height: 60px;
+  background-color: #1677ff85;
+  position: relative;
+  padding-top: 13px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+.nav-elements ul {
+  padding-right: 10px;
+  display: flex;
+  justify-content :end;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .loginmain-form{
+    height: auto;
+    width: 350px;
+    color: white;
+    display: flex;
+    background-color: #34d1bb;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-User-form {
+    padding: 3rem;
+    height: 450px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcff;
+  }
+
+  .ant-space-item {
+    max-width: 350px !important;
+  }
+
+  input[type="text"] {
+    width: 320px;
+    padding: 12px 20px;
+    border-radius: 4px;
+  }
+
+  input[type="number"] {
+    width: 320px;
+    padding: 12px 20px;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+  }
+  input[type="search"] {
+    width: 320px !important;
+    padding: 12px 20px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .add-btn{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 85px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav-elements {
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #b6d2e0;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
+
+
+.logout {
+  border: none;
+  padding: 10px;
+}
